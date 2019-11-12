@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="secundario.css">
+    <link rel="stylesheet" type="text/css" href="terciario.css">
+</head>
+
+
+  <body>
+    <header>
+<div class="container">
+    <h1 id="titulo"><b>CL Personalizados</b></h1>
+</div>
+    <ul>
+        <li><a href="produtos.html">Inicio</a></li>
+        <li><a href="Orçamento.html"  class="active">Orçamento</a></li>
+        <li><a href="FaleConosco.html">Fale Conosco</a></li>
+
+    </ul>
+    <img id="img1" src="https://cdn.awsli.com.br/600x450/180/180275/produto/9601182/596d5d0721.jpg"title="Imagem Caneca" alt="Caneca de ceramica com alça branca de lado, tema do starWars com as imagens dos personagens só de rosto em quadradinhos com o fundo colorido" width="130" height="130"/>
+  </header>
+
+<div class="container-fluid">
+  <h2>Faça seu orçamento</h2>
+  <p>Esse é um formulario de orçamento, ao envia-lo mandaremos um e-mail com os dados para você</p>
+  <form action="/pagina" class="needs-validation" novalidate>
+    <div class="form-group">
+      <label for="cnome">Nome:</label>
+      <input type="text" class="form-control" id="cnome" placeholder="Nome" name="cnome" required>
+      <div class="valid-feedback">Nome Valido</div>
+      <div class="invalid-feedback">Por favor preencha esse campo</div>
+    </div>
+
+    <div class="form-group">
+      <label for="clidade">Idade:</label>
+      <br>
+    <div class="col-sm-2">          
+      <input type="number" name="Idade" class="form-control" min ="0" id="clidade" placeholder="Idade" name="clidade">
+    </div>
+    </div>
+     <label for="copçao">Selecione o Produto:</label>
+     <br>
+     <label class="radio-inline">
+      <input type="radio" name="optradio" checked> Canecas    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio"> Camisas</label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio"> Copos</label>
+
+      <div class="form-group">
+      <label for="clquantidade">Quantidade:</label>
+      <br>
+            <div class="col-sm-2">          
+      <input type="number" name="quantidade" class="form-control"  min="1" id="clquantidade" placeholder="Quantidade" name="clquantidade" required>
+    </div>
+      <div class="valid-feedback">Quantidade valida</div>
+      <div class="invalid-feedback">Por favor informe a quantidade</div>
+    </div>
+
+    <div class="form-group" >
+      <label for="ccpf">CPF:</label>
+      <input type="text" class="form-control cpf-mask" id="ccpf" placeholder="Ex.: 000.000.000-00" maxlength="14" autocomplete="off" required>
+      <div class="valid-feedback">CPF Valido</div>
+      <div class="invalid-feedback">Por favor preencha o CPF</div>
+    </div>
+<div class="form-group">
+  <label for="cdate">Data para entrega:</label>
+    <input class="form-control" type="date" value="0000-00-00" id="cdate" required>
+            <div class="valid-feedback">Data Valida</div>
+        <div class="invalid-feedback">Informe uma data</div>
+  </div>
+
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" required> Confirmar Dados
+        <div class="valid-feedback">Valido</div>
+        <div class="invalid-feedback">Marque essa opçao</div>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</div>
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+</body>
+</html>
+
