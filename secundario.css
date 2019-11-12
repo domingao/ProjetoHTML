@@ -8,7 +8,6 @@ body {
 
 nav {border-style: outset; margin-left: 460px; margin-right: 460px;}
 
-p {padding: 25px 50px 75px 100px;}
 
 h1 {
   font-family: 'Abril Fatface', cursive;
@@ -113,7 +112,7 @@ li a:hover {
 		overflow-y: scroll;
 
 	}
-#teste {
+.teste {
 		text-align: center;
 	}
 
