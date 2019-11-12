@@ -50,12 +50,16 @@
     </div>
      <label for="copçao">Selecione o Produto:</label>
      <br>
-     <label class="radio-inline">
-      <input type="radio" name="optradio" checked> Canecas    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio"> Camisas</label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio"> Copos</label>
+     <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+     selecione
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Caneca</a>
+      <a class="dropdown-item" href="#">Camisa</a>
+      <a class="dropdown-item" href="#">Copo</a>
+    </div>
+  </div>
 
       <div class="form-group">
       <label for="clquantidade">Quantidade:</label>
