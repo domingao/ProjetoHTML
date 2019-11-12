@@ -1,5 +1,4 @@
 
-usar float
 ul {
   list-style-type: none;
   margin: 0;
@@ -7,12 +6,9 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
-li a:hover {
-  background-color: #111;
-}
 
 .active {
-  background-color: red;
+  background-color: green;
 }
 
 
@@ -23,10 +19,17 @@ footer{
 #img1{
 	overflow: auto;
 	position: absolute;
-	top: 80px;
+	top: 20px;
   	right: 0px;
 }
-.divteste{
-  overflow: auto;
-  position: absolute;
+
+#img3{
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+	float: none;
+}
+.teste{
+
+  ali
 }
